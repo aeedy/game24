@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to Rest API.
+      form(method='POST' action='/game24')
+          div.form-group
+            label(for='input1') Value 1:
+            input#name.form-control(type='text', placeholder='value 1' name='input1')
+          div.form-group
+            label(for='input2') Value 2:
+            input#name.form-control(type='text', placeholder='value 2' name='input2')
+          div.form-group
+            label(for='input3') Value 3:
+            input#name.form-control(type='text', placeholder='value 3' name='input3')            
+          div.form-group
+            label(for='input4') Value 4:
+            input#name.form-control(type='text', placeholder='value 4' name='input4')               
+
+          button.btn.btn-primary(type='submit') Submit
